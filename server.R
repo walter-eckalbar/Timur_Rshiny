@@ -32,7 +32,7 @@ shinyServer(function(input, output, session) {
 
   condsTable = read.table("conditions.txt",sep='\t',header=T,row.names = 1)
   data = read.table("data.txt",sep = '\t',header = T,row.names = 1)
-  annot = read.table("~/data/human_ens_GRCh38_annot.extended.txt", sep="\t", quote="", header=T, row.names=1, stringsAsFactors=F, fill=T)
+  annot = read.table("human_ens_GRCh38_annot.extended.txt", sep="\t", quote="", header=T, row.names=1, stringsAsFactors=F, fill=T)
   
   observe({
     boxNameType <- input$nameType
